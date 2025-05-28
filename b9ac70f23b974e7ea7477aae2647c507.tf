@@ -45,7 +45,7 @@ resource "ibm_iam_service_policy" "storage_policy" {
   roles         = [ibm_iam_custom_role.cos_custom_role.display_name]
   resource_attributes {
     name  = "resource"
-    value = "bucket-poc-cloudability"
+    value = "billing-reports-1lh1"
     operator = "stringEquals"
   }
   resource_attributes {
